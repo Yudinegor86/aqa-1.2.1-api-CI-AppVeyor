@@ -19,7 +19,7 @@ class MobileBankApiTestV3 {
           .get("/demo/accounts")
       // Проверки
       .then()
-          .statusCode(200)
+          .statusCode(2001)
           // специализированные проверки - лучше
           .contentType(ContentType.JSON)
           .body("", hasSize(3))
